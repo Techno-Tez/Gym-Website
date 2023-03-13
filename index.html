@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('https://cdn.pixabay.com/photo/2016/11/21/22/56/naked-1847866_960_720.jpg');
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert();
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 17px;
+            font-size: 18px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(21, 255, 0); */
+            display: block;
+            width: 40%;
+            margin: 23px auto;
+        }
+
+        .right {
+            /* border: 2px solid rgb(44, 9, 240); */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 28px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 10px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(202, 199, 199);
+        }
+
+        .btn {
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+            border: 2px solid gray;
+            border-radius: 35px;
+            font-size: 19px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(46, 45, 45);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 100px 30px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            border-radius: 35px;
+            width: 60%;
+            height: 60%;
+            padding: 10px;
+            margin: 15px auto;
+            border: 2px solid black;
+            font-family: 'Baloo Bhai 2', cursive ;
+        }
+        .btn1{
+            display: block;
+            margin: 30px auto;
+            width: 60%;
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+            border: 2px solid gray;
+            border-radius: 35px;
+            font-size: 19px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left for logo -->
+            <img src="logo1.png" alt="">
+            <div>Tejas Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right for search -->
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of Ahmedabad now!</h1>
+        <form action="noform.php">
+            <div class="formgroup">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="tel" placeholder="Enter your Phone Number">
+            </div>
+            <div class="formgroup">
+                <input type="email" placeholder="Enter your Email ID">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter your City">
+            </div>
+            <div class="formgroup">
+                <input type="date" placeholder="Enter Birth Date">
+            </div>
+        </form>
+        <button class="btn1">Submit</button>
+    </div>
+</body>
+
+</html>
